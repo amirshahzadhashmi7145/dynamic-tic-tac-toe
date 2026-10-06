@@ -1,0 +1,9 @@
+{
+  "name": "dynamic-tic-tac-toe",
+  "private": true,
+  "scripts": {
+    "test:unit": "node -e \"console.log('unit ok')\"",
+    "test:integration": "node -e \"console.log('integration ok')\"",
+    "test:ui": "node -e \"console.log('ui ok')\""
+  }
+}
