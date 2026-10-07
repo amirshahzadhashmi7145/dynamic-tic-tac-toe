@@ -1,9 +1,19 @@
 {
   "name": "dynamic-tic-tac-toe",
   "private": true,
+  "version": "1.0.0",
+  "description": "Playable Dynamic Tic Tac Toe — Express API + static frontend",
+  "main": "backend/server.js",
   "scripts": {
+    "start": "node backend/server.js",
     "test:unit": "node -e \"console.log('unit ok')\"",
     "test:integration": "node -e \"console.log('integration ok')\"",
     "test:ui": "node -e \"console.log('ui ok')\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
   }
 }

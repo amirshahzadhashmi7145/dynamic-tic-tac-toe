@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="game">
-        <h1>Tic Tac Toe</h1>
-        <div id="board">
-            <div class="cell" data-index="0"></div>
-            <div class="cell" data-index="1"></div>
-            <div class="cell" data-index="2"></div>
-            <div class="cell" data-index="3"></div>
-            <div class="cell" data-index="4"></div>
-            <div class="cell" data-index="5"></div>
-            <div class="cell" data-index="6"></div>
-            <div class="cell" data-index="7"></div>
-            <div class="cell" data-index="8"></div>
-        </div>
-        <div id="message"></div>
-        <button id="reset">Reset Game</button>
+  <div id="game">
+    <h1>Dynamic Tic Tac Toe</h1>
+    <p class="hint">Pick a symbol, then click a cell. You play against a simple computer opponent.</p>
+
+    <div id="symbols" class="row">
+      <span>Your symbol:</span>
+      <button type="button" data-symbol="X">X</button>
+      <button type="button" data-symbol="O">O</button>
     </div>
-    <script src="script.js"></script>
+
+    <div id="timer" class="meta">Turn timer: —</div>
+    <div id="stats" class="meta">Games 0 · Wins 0 · Losses 0 · Draws 0 · Win rate 0%</div>
+
+    <div id="board">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <div id="message">Choose X or O to start.</div>
+    <button type="button" id="reset">Reset Game</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
